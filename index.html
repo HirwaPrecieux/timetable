@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Schedule</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            max-width: 1000px;
+            padding: 30px;
+            margin: 0 auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+        .head {
+            font-weight: bold;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            text-transform: uppercase;
+        }
+        .schedule-type {
+            font-size: 20px;
+            color: #34495e;
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .day {
+            font-weight: bold;
+            background-color: #ecf0f1;
+        }
+        .exam-week {
+            background-color: #e8f4f8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="head">Academic Schedule</p>
+        
+        <!-- Regular Classes Table -->
+        <h2 class="schedule-type">Regular Class Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Days</th>
+                    <th>Morning</th>
+                    <th>After break</th>
+                    <th>After lunch</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day">Monday</td>
+                    <td>DVB NoSQL</td>
+                    <td>Ent</td>
+                    <td>Apply Machine Learning Fundamental</td>
+                </tr>
+                <tr>
+                    <td class="day">Tuesday</td>
+                    <td>Math</td>
+                    <td>Apply Fundamental Of Blockchain</td>
+                    <td>Dvp Mobile App</td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                    <td>NoSQL</td>
+                    <td>Practical work</td>
+                    <td>Python Programming</td>
+                </tr>
+                <tr>
+                    <td class="day">Thursday</td>
+                    <td>Blockchain</td>
+                    <td>ReactJS</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td class="day">Friday</td>
+                    <td>ML</td>
+                    <td>Math</td>
+                    <td>Mobile App</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Examination Schedule Table -->
+        <h2 class="schedule-type">Examination Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <!-- <th>9:00 AM - 11:00 AM</th>
+                    <th>1:00 PM - 3:00 PM</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="exam-week">
+                    <td colspan="3">Week 1</td>
+                </tr>
+                <tr>
+                    <td class="day">Monday</td>
+                    <td>-----</td>
+                    <td>-----</td>
+                </tr>
+                <tr>
+                    <td class="day">Tuesday</td>
+                    <td>-----</td>
+                    <td>-----</td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                    <td>Mathematics</td>
+                    <td>-----</td>
+                </tr>
+                <tr>
+                    <td class="day">Thursday</td>
+                    <td>French</td>
+                    <td>-----</td>
+                </tr>
+                <tr>
+                    <td class="day">Friday</td>
+                    <td>ReactJS</td>
+                    <td>Entrepreneurship</td>
+                </tr>
+                <tr class="exam-week">
+                    <td colspan="3">Week 2</td>
+                </tr>
+                <tr>
+                    <td class="day">Monday</td>
+                    <td>Blockchain</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td class="day">Tuesday</td>
+                    <td>-----</td>
+                    <td>NoSQL</td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                    <td>Machine Learning</td>
+                    <td>-----</td>
+                </tr>
+                <tr>
+                    <td class="day">Thursday</td>
+                    <td>Mobile App</td>
+                    <td>-----</td>
+                </tr>
+                <tr>
+                    <td class="day">Friday</td>
+                    <td>-----</td>
+                    <td>-----</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
